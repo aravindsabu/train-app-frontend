@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">TRAIN NAME</label>
+                    <input class="form-control" placeholder="TRAIN NAME" type="text" name="trainName"[(ngModel)]="trainName" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">TRAIN NUMBER</label>
+                    <input class="form-control" placeholder="TRAIN NUMBER" type="text" name="trainNo"[(ngModel)]="trainNo" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">FROM PLACE</label>
+                    <input class="form-control"  placeholder="FROM PLACE" type="text" name="fromPlace"[(ngModel)]="fromPlace" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">TO PLACE</label>
+                    <input class="form-control"   placeholder="TO PLACE" type="text" name="toPlace"[(ngModel)]="toPlace" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">TOTAL SEATS</label>
+                    <input class="form-control"  placeholder="TOTAL SEATS" type="text" name="totalSeat"[(ngModel)]="totalSeat" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success"(click)="readvalues()">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
