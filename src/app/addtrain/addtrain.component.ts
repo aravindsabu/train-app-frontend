@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-addtrain',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddtrainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:ApiService) { }
   trainName=""
   trainNo=""
   fromPlace=""
@@ -22,6 +23,11 @@ export class AddtrainComponent implements OnInit {
       "totalSeat":this.totalSeat
     }
     console.log(data)
+    this.api.addtrain(data).subscribe(
+      (data)=>{
+        alert("data insert successfully")
+      }
+    )
   }
   ngOnInit(): void {
   }
