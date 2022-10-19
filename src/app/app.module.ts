@@ -7,9 +7,13 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddtrainComponent } from './addtrain/addtrain.component';
 import { FormsModule } from '@angular/forms';
+import { ViewtrainComponent } from './viewtrain/viewtrain.component';
 const appRoutes:Routes=[
   {
     path:"",component:AddtrainComponent
+  },
+  {
+    path:"done",component:ViewtrainComponent
   }
 ]
 
@@ -17,7 +21,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddtrainComponent
+    AddtrainComponent,
+    ViewtrainComponent
   ],
   imports: [
     BrowserModule,
