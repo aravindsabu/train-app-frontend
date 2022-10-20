@@ -13,4 +13,7 @@ export class ApiService {
   addtrain=(data:any)=>{
     return this.http.post("http://localhost:8080/trainAdd",data)
   }
+  deletetrain=(data:any)=>{
+    return this.http.post("http://localhost:8080/deleteTrain",data)
+  }
 }
