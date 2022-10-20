@@ -9,12 +9,16 @@ import { AddtrainComponent } from './addtrain/addtrain.component';
 import { FormsModule } from '@angular/forms';
 import { ViewtrainComponent } from './viewtrain/viewtrain.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BooksearchComponent } from './booksearch/booksearch.component';
 const appRoutes:Routes=[
   {
     path:"",component:AddtrainComponent
   },
   {
     path:"done",component:ViewtrainComponent
+  },
+  {
+    path:"ok",component:BooksearchComponent
   }
 ]
 
@@ -23,7 +27,8 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     AddtrainComponent,
-    ViewtrainComponent
+    ViewtrainComponent,
+    BooksearchComponent
   ],
   imports: [
     BrowserModule,
