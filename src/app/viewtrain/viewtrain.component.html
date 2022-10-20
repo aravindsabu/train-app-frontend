@@ -6,6 +6,7 @@
                     <table class="table">
                         <thead>
                             <tr>
+                                <th scope="col">id</th>
                                 <th scope="col">trainName</th>
                                 <th scope="col">trainNo</th>
                                 <th scope="col">fromPlace</th>
@@ -16,11 +17,13 @@
                         </thead>
                             <tbody>
                                 <tr *ngFor="let i of root">
+                                    <td>{{i.id}}</td>
                                     <td>{{i.trainName}}</td>
                                     <td>{{i.trainNo}}</td>
                                     <td>{{i.fromPlace}}</td>
                                     <td>{{i.toPlace}}</td>
                                     <td>{{i.totalSeat}}</td>
+                                    <td><button class="btn btn-danger"(click)="deletetrain(i.id)">delete</button></td>
                                 </tr>
                             </tbody>
 

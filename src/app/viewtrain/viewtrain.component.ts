@@ -18,6 +18,17 @@ export class ViewtrainComponent implements OnInit {
       }
     )
   }
+  deletetrain=(id:any)=>{
+    let data= {
+      "id":id
+     }
+    this.myapi.deletetrain(data).subscribe(
+      (resp)=>{
+        alert("delete")
+      }
+    )
+    this.fetchData()
+  }
   root:any=[]
 
   ngOnInit(): void {
